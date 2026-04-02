@@ -1,4 +1,7 @@
-/* Navigation */
+/* ------------------------- */
+/* NAVIGATION (clean + fixed) */
+/* ------------------------- */
+
 nav {
     background: var(--bg-card);
     border-bottom: 1px solid #e5e7eb;
@@ -8,17 +11,17 @@ nav {
     align-items: center;   /* FIXED */
 }
 
-/* Logo + brand wrapper */
+/* Left side (logo + name) */
 .nav-left {
     display: flex;
-    align-items: center;    /* FIXED */
+    align-items: center;   /* FIXED */
     gap: 0.75rem;
 }
 
-/* Brand anchor */
+/* Brand wrapper */
 .brand {
     display: flex;
-    align-items: center;    /* FIXED */
+    align-items: center;
     gap: 0.75rem;
     text-decoration: none;
     color: inherit;
@@ -30,20 +33,26 @@ nav {
     font-size: 1rem;
 }
 
-/* Navigation links */
+/* Nav links */
 .nav-right a {
     margin-left: 1.5rem;
-    font-weight: 600;         /* nav-specific style */
+    font-weight: 600;
+    color: var(--text-main);
 }
 
-/* ---------------------------------------- */
-/* MODERN LINK STYLING (ALL LINKS SITEWIDE) */
-/* ---------------------------------------- */
+/* Hover behaviour */
+.nav-right a:hover {
+    color: var(--accent);
+}
+
+/* ------------------------- */
+/* MODERN LINK STYLING       */
+/* ------------------------- */
+
 a {
-    color: var(--accent);      /* teal */
+    color: var(--accent);
     text-decoration: none;
-    transition: color 0.2s ease;
-    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 a:hover {
@@ -52,16 +61,7 @@ a:hover {
     text-underline-offset: 3px;
 }
 
-/* Override colour for nav links specifically */
-nav a {
-    color: var(--text-main);
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* Responsive: hide name on small screens */
+/* Responsive: hide name on mobile */
 @media (max-width: 600px) {
     .brand-name {
         display: none;
