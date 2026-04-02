@@ -135,3 +135,13 @@ a:hover {
     text-underline-offset: 3px;      /* modern spacing */
 }
 
+nav a {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
