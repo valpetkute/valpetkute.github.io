@@ -143,4 +143,9 @@ nav a:hover {
     color: var(--accent);
 }
 
-
+/* FORCE logo size */
+nav .logo {
+  height: 64px;
+  width: auto;
+  max-height: none;
+}
