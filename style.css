@@ -1,69 +1,91 @@
-/* ------------------------- */
-/* NAVIGATION (clean + fixed) */
-/* ------------------------- */
+/* ---------- RESET / BASE ---------- */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background: #f5f6f4;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ---------- NAV ---------- */
 nav {
-    background: var(--bg-card);
-    border-bottom: 1px solid #e5e7eb;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   /* FIXED */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-/* Left side (logo + name) */
 .nav-left {
-    display: flex;
-    align-items: center;   /* FIXED */
-    gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-/* Brand wrapper */
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    text-decoration: none;
-    color: inherit;
+.logo {
+  height: 32px;
+  width: auto;
 }
 
-/* Brand text */
 .brand-name {
-    font-weight: 600;
-    font-size: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-/* Nav links */
 .nav-right a {
-    margin-left: 1.5rem;
-    font-weight: 600;
-    color: var(--text-main);
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: #1f2933;
+  text-decoration: none;
 }
 
-/* Hover behaviour */
 .nav-right a:hover {
-    color: var(--accent);
+  color: #0f766e;
 }
 
-/* ------------------------- */
-/* MODERN LINK STYLING       */
-/* ------------------------- */
-
-a {
-    color: var(--accent);
-    text-decoration: none;
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+/* ---------- MAIN ---------- */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-a:hover {
-    color: #0b5e58;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+section {
+  margin-bottom: 4rem;
 }
 
-/* Responsive: hide name on mobile */
-@media (max-width: 600px) {
-    .brand-name {
-        display: none;
-    }
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* ---------- GRID / CARDS ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
 }
