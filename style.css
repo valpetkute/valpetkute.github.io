@@ -35,6 +35,11 @@ nav a:hover {
     color: var(--accent);
 }
 
+nav {
+  align-items: center;
+  min-height: 80px;
+}
+
 /* Header */
 header {
     padding: 4rem 1rem 2rem;
