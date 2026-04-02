@@ -11,7 +11,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: var(--bg-main);
-    colour: var(--text-main);
+    color: var(--text-main);
 }
 
 /* Navigation */
@@ -21,18 +21,18 @@ nav {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: centre;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    colour: var(--text-main);
+    color: var(--text-main);
     margin-left: 1.5rem;
     font-weight: 500;
 }
 
 nav a:hover {
-    colour: var(--accent);
+    color: var(--accent);
 }
 
 /* Header */
