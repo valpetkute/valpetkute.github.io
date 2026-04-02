@@ -120,3 +120,18 @@ section {
         display: none;
     }
 }
+
+/* Modern link styling */
+a {
+    color: var(--accent);            /* teal, fits your palette */
+    text-decoration: none;           /* remove ugly underline */
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0b5e58;                  /* darker teal on hover */
+    text-decoration: underline;      /* tasteful underline */
+    text-underline-offset: 3px;      /* modern spacing */
+}
+
