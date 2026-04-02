@@ -107,3 +107,19 @@ section {
 }
 
 
+/* Brand link */
+.brand {
+    display: flex;
+    align-items: centre;
+    gap: 0.75rem;
+    text-decoration: none;
+    colour: inherit;
+}
+
+/* Responsive: hide name on small screens */
+@media (max-width: 600px) {
+    .brand-name {
+        display: none;
+    }
+}
+
