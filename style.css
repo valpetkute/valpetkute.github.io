@@ -1,37 +1,84 @@
-/* Global settings */
+:root {
+    --bg-main: #f5f6f4;
+    --bg-card: #ffffff;
+    --text-main: #1f2933;
+    --text-muted: #6b7280;
+    --accent: #0f766e;       /* teal */
+    --accent-soft: #e6f4f1;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    colour: #333;
+    background: var(--bg-main);
+    colour: var(--text-main);
+}
+
+/* Navigation */
+nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+}
+
+nav a {
+    text-decoration: none;
+    colour: var(--text-main);
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    colour: var(--accent);
 }
 
 /* Header */
 header {
-    background: #0f172a;
-    colour: white;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem 2rem;
     text-align: centre;
 }
 
-/* Main content card */
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-/* Section headings */
-h2 {
-    margin-top: 2rem;
+header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
-footer {
-    text-align: centre;
-    padding: 2rem;
-    colour: #666;
+header p {
+    colour: var(--text-muted);
 }
+
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+    background: var(--bg-card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* Grids */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 4rem;
+}
+``
