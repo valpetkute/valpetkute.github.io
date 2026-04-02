@@ -40,6 +40,10 @@ nav {
   min-height: 80px;
 }
 
+nav {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
 /* Header */
 header {
     padding: 4rem 1rem 2rem;
