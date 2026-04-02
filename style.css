@@ -100,7 +100,9 @@ section {
 
 /* Logo */
 .logo {
-    height: auto;
+  height: 72px;   /* strong but elegant size */
+  width: auto;
+  display: block;
 }
 
 /* Brand text */
