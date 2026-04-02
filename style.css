@@ -17,7 +17,6 @@ body {
 /* Navigation */
 nav {
     background: var(--bg-card);
-    border-bottom: 1px solid #e5e7eb;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
