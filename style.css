@@ -7,43 +7,86 @@
     --accent-soft: #e6f4f1;
 }
 
-/* Global */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: var(--bg-main);
-    color: var(--text-main); /* FIXED */
+    colour: var(--text-main);
 }
 
-/* -------------------------------- */
-/* NAVIGATION (SOFTER, PROFESSIONAL) */
-/* -------------------------------- */
-
+/* Navigation */
 nav {
-    background: #f9faf8;                       /* softer warm grey */
-    border-bottom: 1px solid #e5e7eb;          /* subtle divider */
+    background: var(--bg-card);
+    border-bottom: 1px solid #e5e7eb;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;                       /* FIXED */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);     /* subtle depth */
+    align-items: centre;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--text-main);
+    colour: var(--text-main);
     margin-left: 1.5rem;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: var(--accent);
+    colour: var(--accent);
 }
 
-/* Navigation layout (logo + name alignment) */
+/* Header */
+header {
+    padding: 4rem 1rem 2rem;
+    text-align: centre;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    colour: var(--text-muted);
+}
+
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+    background: var(--bg-card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* Grids */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 4rem;
+}
+``
+
+/* Navigation layout */
 .nav-left {
     display: flex;
-    align-items: center; /* FIXED */
+    align-items: centre;
     gap: 0.75rem;
 }
 
@@ -63,42 +106,3 @@ nav a:hover {
     font-size: 1rem;
 }
 
-/* Brand link wrapper */
-.brand {
-    display: flex;
-    align-items: center; /* FIXED */
-    gap: 0.75rem;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Responsive: hide name on small screens */
-@media (max-width: 600px) {
-    .brand-name {
-        display: none;
-    }
-}
-
-/* ------------------------------ */
-/* HEADER (REMOVE BLACK BACKGROUND) */
-/* ------------------------------ */
-
-header {
-    padding: 4rem 1rem 2rem;
-    text-align: center; /* FIXED spelling */
-    background: none;   /* ensure no dark background */
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    color: var(--text-muted);
-}
-
-/* ------------------------------ */
-/* MAIN LAYOUT */
-/* ------------------------------ */
-
-main {
