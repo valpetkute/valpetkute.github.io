@@ -94,8 +94,9 @@ section {
 }
 
 /* Logo */
-   .logo {
-    height: 48px;
+.logo {
+    height: 64px;
+    width: auto;
 }
 
 /* Brand text */
